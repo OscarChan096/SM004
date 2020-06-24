@@ -1,0 +1,160 @@
+#main{
+    -fx-background-color: transparent;
+}
+
+.root {
+    -fx-effect: dropshadow( gaussian, rgba(0, 0, 0, 0.7), 10, 0.5, 0.0, 0.0 );
+    -fx-background-radius: 8;
+    -fx-background-color: rgba(60, 63, 65, 0.9);
+    -fx-padding: 10;
+}
+
+.content {
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+    -fx-padding: 0 0 15 0;
+}
+
+.label{
+    -fx-text-fill: white;
+}
+
+.menu-button:hover{
+    -fx-background-color: #4c4c4c;
+}
+
+.menu-button{
+    -fx-background-image: url("/res/menu.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+
+.menu-item {
+    -fx-padding: 5 7 5 7;
+    -fx-text-fill: white;
+    -fx-background-color: transparent ;
+}
+
+.menu-item:hover{
+    -fx-padding: 5 7 5 7;
+    -fx-background-color: #474747;
+    -fx-text-fill: white;
+}
+
+.menu-item .text-area{
+    -fx-text-alignment: left;
+}
+
+.menu-item .label{
+    -fx-text-alignment: left;
+}
+
+.menu-item .label .text{
+    -fx-text-alignment: left;
+}
+
+.context-menu {
+    -fx-effect: dropshadow( gaussian, rgba(43, 43, 43, 0.7), 10, 0.5, 0.0, 0.0 );
+    -fx-background-color: rgba(43,43,43,0.7);
+    -fx-border-width: 0.2px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 10;
+    -fx-background-insets: 0.0, 1.0, 2.0;
+    /**-fx-background-radius: 0.0 6.0 6.0 6.0, 0.0 5.0 5.0 5.0, 0.0 4.0 4.0 4.0;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;
+    -fx-opacity: 0.9;*/
+}
+
+.listmenu{
+    -fx-background-color: transparent;
+    -fx-padding: 0 20 0 10;
+    -fx-background-insets: 1;
+    -fx-border-color: rgba(255,255,255,0.3) ;
+    -fx-border-width: 0 1 0 0 ;
+    -fx-border-style: solid;
+}
+
+.listmusic{
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 0 20;
+    -fx-background-insets: 5;
+}
+
+.button:hover{
+    -fx-background-color: #424141;
+}
+
+.button:pressed{
+    -fx-background-color: black;
+}
+
+.btnmax:hover{
+    -fx-background-color: blue;
+}
+
+.btnmax{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+
+.btnclose:hover{
+    -fx-background-color: red;
+}
+
+.btnclose{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.btnmin:hover{
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.btnmin{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.back{
+    -fx-background-image: url("/res/skipbefore.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 35 35;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+.back:hover{
+    -fx-background-image: url("/res/skipbeforehover.png");
+}
+
+.play{
+    -fx-background-image: url("/res/play.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 35 35;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+.play:hover{
+    -fx-background-image: url("/res/playhover.png");
+}
+
+.after{
+    -fx-background-image: url("/res/skipafter.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 35 35;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+.after:hover{
+    -fx-background-image: url("/res/skipafterhover.png");
+}
+
+.playtiles{
+    -fx-background-radius: 5;
+    -fx-background-color: transparent;
+    -fx-padding: 10 0 0 0;
+}
