@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sm004.controllers.Barplay">
+
+    <stylesheets>
+        <URL value="@../styles/barplay.css"/>
+    </stylesheets>
+
+    <bottom>
+        <HBox spacing="15" alignment="CENTER" styleClass="playtiles">
+            <Button fx:id="back" id="back" onAction="#btnBack" styleClass="back"/>
+            <Button fx:id="play" id="play" onAction="#btnPlay" styleClass="play"/>
+            <Button fx:id="pause" id="pause" onAction="#btnPause" styleClass="pause"/>
+            <Button fx:id="after" id="after" onAction="#btnAfter" styleClass="after"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

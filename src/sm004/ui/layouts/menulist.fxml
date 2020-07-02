@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sm004.controllers.Menulist" styleClass="menulist">
+
+    <stylesheets>
+        <URL value="@../styles/menulist.css"/>
+    </stylesheets>
+
+    <left>
+        <VBox spacing="5" styleClass="listmenu">
+            <Button fx:id="btncanciones" id="btncanciones" text="Canciones" onAction="#canciones" styleClass="btncanciones"/>
+        </VBox>
+    </left>
+
+</BorderPane>

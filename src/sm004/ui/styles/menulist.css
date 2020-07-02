@@ -1,0 +1,13 @@
+.listmenu{
+    -fx-background-color: transparent;
+    -fx-padding: 0 20 0 10;
+    -fx-background-insets: 1;
+    -fx-border-color: rgba(255,255,255,0.2) ;
+    -fx-border-width: 0 1 0 0 ;
+    -fx-border-style: solid;
+}
+
+.btncanciones{
+    -fx-background-color: transparent;
+    -fx-text-fill: #c7c7c7;
+}

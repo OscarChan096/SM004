@@ -1,4 +1,4 @@
-package sample;
+package sm004;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,7 +13,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("ui/sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ui/layouts/uimain.fxml"));
         primaryStage.setTitle("SimpleMusic");
         primaryStage.getIcons().add(new Image("res/icsm004.png")); // icono de la app
         Scene scene = new Scene(root,750,500);

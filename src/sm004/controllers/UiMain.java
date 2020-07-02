@@ -1,4 +1,4 @@
-package sample.controllers;
+package sm004.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -6,8 +6,15 @@ import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import javazoom.jlgui.basicplayer.BasicController;
+import javazoom.jlgui.basicplayer.BasicPlayer;
+import javazoom.jlgui.basicplayer.BasicPlayerEvent;
+import javazoom.jlgui.basicplayer.BasicPlayerListener;
 
-public class Controller {
+import java.io.File;
+import java.util.Map;
+
+public class UiMain {
 
     @FXML private Button btnClose;
     @FXML private Button btnMin;
@@ -55,16 +62,6 @@ public class Controller {
         stage.setY(mouseEvent.getScreenY()-initY);
     }
 
-    public void btnBack(ActionEvent actionEvent) {
-    }
-
-    public void btnPlay(ActionEvent actionEvent) {
-        System.out.println("play");
-    }
-
-    public void btnAfter(ActionEvent actionEvent) {
-    }
-
     public void abrir(ActionEvent actionEvent) {
     }
 
@@ -73,4 +70,5 @@ public class Controller {
 
     public void about(ActionEvent actionEvent) {
     }
+
 }
