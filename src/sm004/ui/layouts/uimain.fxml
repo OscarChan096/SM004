@@ -22,7 +22,7 @@
             <HBox spacing="5" alignment="TOP_RIGHT" styleClass="menu" HBox.hgrow="ALWAYS">
                 <MenuButton fx:id="menufile" id="menufile" style="-fx-text-alignment: left">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Importar" onAction="#abrir"/>
+                        <MenuItem mnemonicParsing="false" text="Importar" onAction="#importar" fx:id="abrir" id="abrir"/>
                         <MenuItem mnemonicParsing="false" text="Configuracion" onAction="#config"/>
                         <MenuItem mnemonicParsing="false" text="About" onAction="#about"/>
                     </items>

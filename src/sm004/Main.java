@@ -8,6 +8,7 @@ import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import sm004.controllers.UiMain;
 
 public class Main extends Application {
 
@@ -22,7 +23,6 @@ public class Main extends Application {
         //primaryStage.initStyle( StageStyle.UNDECORATED );
         //scene.getStylesheets().add( getClass().getResource( "style.css" ).toString() );
         //primaryStage.initStyle(StageStyle.UTILITY);
-
         primaryStage.setScene(scene);
         primaryStage.show();
 

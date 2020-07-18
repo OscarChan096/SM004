@@ -3,16 +3,15 @@ package sm004.controllers;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.DirectoryChooser;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import javazoom.jlgui.basicplayer.BasicController;
-import javazoom.jlgui.basicplayer.BasicPlayer;
-import javazoom.jlgui.basicplayer.BasicPlayerEvent;
-import javazoom.jlgui.basicplayer.BasicPlayerListener;
+import sm004.smc.MusicPlayer;
 
 import java.io.File;
-import java.util.Map;
 
 public class UiMain {
 
@@ -20,8 +19,10 @@ public class UiMain {
     @FXML private Button btnMin;
     @FXML private Button btnMax;
     @FXML private BorderPane frame;
+    @FXML private MenuItem abrir;
     private boolean maximized = false;
     private double initX,initY,initHeight,initWidth;
+
 
     @FXML
     public void cerrar(ActionEvent actionEvent) {
@@ -62,7 +63,23 @@ public class UiMain {
         stage.setY(mouseEvent.getScreenY()-initY);
     }
 
-    public void abrir(ActionEvent actionEvent) {
+    public void importar(ActionEvent actionEvent) {
+        Stage stage = (Stage)frame.getScene().getWindow();
+
+        DirectoryChooser openFolder = new DirectoryChooser();
+        File folder = openFolder.showDialog(stage);
+
+        MusicPlayer mp = new MusicPlayer(folder.getAbsolutePath());
+        try {
+            MusicPlayer.readlist();
+        }catch (Exception ex){
+            System.out.println(ex.getMessage()+"UiMain");
+        }
+        //System.out.println(folder.getAbsolutePath());
+
+        //FileChooser openFolder = new FileChooser();
+        //File folder = openFolder.showOpenDialog(stage);
+
     }
 
     public void config(ActionEvent actionEvent) {
